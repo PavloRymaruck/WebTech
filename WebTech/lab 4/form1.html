@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <title>Лабораторна робота №4. Завдання №1.</title>
+        <meta name="description" content="Laboratory work 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+</head>
+<body>
+    <p>
+        <form type="">
+            <p>Логін:
+                <input type="text" name="Login">
+            </p>
+            <p>Пароль:
+                <input type="password" name="Password">
+            </p>
+            <p>Повторіть пароль:
+                <input type="password" name="C-Password">
+            </p>
+            <p>Стать:
+                <input type="radio" name="answer" value="a1">чоловік
+                <input type="radio" name="answer" value="a2">жінка
+            </p>
+            <p>Вкажіть країну:
+                <select name="country">
+                    <option value="c0">...</option>
+                    <option value="c1">Україна</option>
+                    <option value="c2">Все, що не Україна</option>
+                </select>
+            </p>
+            <p>Про себе:
+                <textarea rows="10" cols="45" name="text"></textarea>
+
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+        </form>
+    </p>
+    <br>
+    <br>
+    <br>
+    <p>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Логін:
+                    </td>
+                    <td>
+                        <input type="text" name="Login">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Пароль:
+                    </td>
+                    <td>
+                        <input type="password" name="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Повторіть пароль:
+                    </td>
+                    <td>
+                        <input type="password" name="C-Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Стать:
+                    </td>
+                    <td>
+                        <input type="radio" name="answer" value="a1">чоловік
+                        <input type="radio" name="answer" value="a2">жінка
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Виберіть місто:
+                    </td>
+                    <td>
+                        <select name="town" size="3">
+                            <option value="c0">Київ</option>
+                            <option value="c1">Івано-франківськ</option>
+                            <option value="c2">Львів</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Інтереси:
+                    </td>
+                    <td>
+                        <input type="checkbox" name="interests" value="i1">Програмування
+                        <input type="checkbox" name="interests" value="i2">Малювання
+                        <input type="checkbox" name="interests" value="i3">Рибальство
+                        <input type="checkbox" name="interests" value="i4">Колекціонування
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input type="reset">
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>
+    <form oninput="funt.value=(weight.value*2.2).toFixed(2);cent.value=(weight.value/100).toFixed(2)" >
+            <p>
+                Ваша вага в кг:
+                <input type="number" name="weight">
+            </p>
+            <p>
+                Вага в фунтах:
+                <output name="funt">0</output>
+            </p>
+            <p>
+                Вага в центнерах:
+                <output name="cent">0</output>
+            </p>
+        </form>
+    </p>
+    <br>
+    <br>
+    <br>
+    <p>
+        <form oninput="C.value=(1*A.value)+(1*B.value)">
+            <p>
+                Введіть 2 числа і отримайте суму
+            </p>
+            <p>
+                <input type="number"name="A">+<input type="number" name="B">=<output name="C">0</output>
+            </p>
+        </form>
+    </p>
+    <br>
+    <br>
+    <br>
+    <p>
+        <form oninput="result.value=R.value" >
+            <p>0<input type="range" min="0" max="100" step="1" name="R">100</p>
+            <br>
+            <output name="result"></output>
+        </form>
+    </p>
+    <br>
+    <br>
+    <br>
+    <p>
+        <form oninput="Many.value=(time.value*many.value)+(pod.value*(time.value*many.value))">
+            <p>
+                Кількість годин: <input type="number" name="time">
+            </p>
+            <p>
+                Ставка грн: <input type="number" name="many">
+            </p>
+            <p>
+                Податок: <input type="number" name="pod">
+            </p>
+            <p>
+                Зарплата всього: <output name="Many"></output>
+            </p>
+        </form>
+    </p>
+</body>
+</html>

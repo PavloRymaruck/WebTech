@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <title>Лабораторна робота №5. Завдання №1.</title>
+        <meta name="description" content="Laboratory work 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Ігрове кафе "Game-Realms"</h1>
+    <form oninput="result.value=R.value">
+        <h2>Анкета</h2>
+        <p>
+            П.І.
+            <input type="text" name="PI" required>
+        </p>
+        <p>
+            Email:
+            <input type="email" autocomplete="off" required><br>
+            <input type="checkbox">Надсилати мені нагадування
+        </p>
+        <p>
+            Tel:
+            <input type="tel" required>
+        </p>
+        <p>
+            День і час: <br>
+            <input type="date" required>
+            <input type="time" required>
+        </p>
+        <p>
+            Гра:
+            <input list="game" required spellcheck="false">
+            <datalist id="game">
+                <option>Зомбіцид</option>
+                <option>Дракони і підземелля</option>
+                <option>Піксель Тактікс</option>
+                <option>Таверна Червоний Дракон</option>
+                <option>Острів Духів</option>
+                <option>Маленький Світ</option>
+                <option>Каркассон</option>
+                <option>Дуєль двох світів</option>
+                <option>Санторіні</option>
+                <option>Деус</option>
+                <option>Ксеношифт</option>
+                <option>Заміс</option>
+            </datalist>
+            <br>
+            <br>
+            Додаткова атрибутика:
+            <input type="radio" name="atr" value="a1"> Так
+            <input type="radio" name="atr" value="a1"> Ні 
+        </p>
+        <p>
+            Скільки людей очікується в вашій компанії:
+            <br>
+                <p>1<input type="range" min="1" max="20" step="1" value="1" name="R" required>20</p>
+                <br>
+                <output name="result"></output>
+        </p>
+        <p>
+            Ви бажаєте грати лише в колі вашої компанії?
+            <input type="radio" name="company" value="c1"> Так
+            <input type="radio" name="company" value="c2"> Ні, ми не проти додаткових гравців
+        </p>
+        <p>
+            Про мене:
+            <br>
+            <textarea name="ForMy" cols="60" rows="20" spellcheck="false"></textarea>
+        </p>
+        <p>
+            <input type="reset">
+            <input type="submit">
+        </p>
+    </form>
+</body>
+</html>
