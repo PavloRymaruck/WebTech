@@ -1,0 +1,19 @@
+.headline {
+    text-transform: full-width;
+    color: red;
+}
+#sidebar {
+ color: deeppink;
+}
+.pos{
+    color: red;
+}
+.des{
+    color: deeppink;
+}
+.kek{
+    color: green;
+}
+#os{
+    text-decoration: none;
+}
